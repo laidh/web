@@ -1,0 +1,22 @@
+.nav-item{
+  text-align: center;
+  min-width: 120px;
+  border: #0910c6 solid 2px;
+  background-color: #279cd2;
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  transition: all 150ms ease-in-out;
+  &:hover{
+    color: #e8e8e8;
+    box-shadow: 0 0 2px 0 #2405ec inset, 0 0 10px 4px #1408f2;
+  }
+}
+
+.navbar{
+  gap: 20px;
+  flex-direction: column;
+  @media (min-width: 1200px){
+    flex-direction: row;
+  }
+}

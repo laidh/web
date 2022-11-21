@@ -1,0 +1,10 @@
+.blue{
+  border: #0910c6 solid 2px;
+  background-color: #279cd2;
+  color: white;
+  &:hover{
+    color: #f3f3f3 !important;
+    border: #0910c6 solid 2px !important;
+    background-color: #0910c6 !important;
+  }
+}
