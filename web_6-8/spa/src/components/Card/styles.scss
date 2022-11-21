@@ -1,0 +1,8 @@
+.card-img-top{
+  transition: all 250ms ease-in-out;
+  opacity: 1;
+  &:hover{
+    opacity: .8;
+    filter: contrast(110%);
+  }
+}
