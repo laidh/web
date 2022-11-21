@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Gems</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<main>
+    <div class="title">
+        <h1>Edit Gems</h1>
+    </div>
+    <form method="get" class="editGems" id="editForm">
+        <input type="hidden" name="id" id="id" value="" />
+        Name
+        <input type="text" name="name" id="name" value="" class="gemsInput" />
+        Carates
+        <input type="number" name="carates" id="carates" value="" class="gemsInput" />
+        Price
+        <input type="number" name="price" id="price" value="" class="gemsInput" />
+        <button class="button" id="editConfirmBtn" type="submit">Save Changes</button>
+    </form>
+    </div>
+</main>
+<div class="modal-overlay" id="modal">
+    <div class="modal">
+        <div class="modal-btn-close" id="btn-close">x</div>
+        <div id="errorTxt"></div>
+    </div>
+</div>
+<script defer>
+    renderDefaultFormData();
+    const editForm = document.getElementById("editForm");
+    editForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const id = document.getElementById('id')
+        const name = document.getElementById('name')
+        const carates = document.getElementById('carates')
+        const price = document.getElementById('price')
+        const editGem = {
+            id: id.value,
+            name: name.value,
+            carats: Number(carates.value),
+            price: Number(price.value),
+        };
+        editData(editGem);
+    });
+    const modalClose = document.getElementById('btn-close')
+    modalClose.addEventListener('click', function (event) {
+        event.preventDefault();
+        document.getElementById('modal').style.display = 'none';
+    })
+</script>
+</body>
+</html>

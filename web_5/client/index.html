@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab_4</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<main>
+    <header>
+        <form class="search" id="searchForm">
+            <input type="search" class="input" id="search">
+            <button class="button">Search</button>
+        </form>
+        <a href="create.html" class="edit-button">Create Item</a>
+    </header>
+    <div class="content">
+        <div class="sidebar">
+            <form class="sort-by-carates" id="sortForm">
+                <button class="button">Sort by Carates</button>
+            </form>
+            <div class="line"></div>
+            <div class="total-amount">
+                <h3>
+                    Total Amount:<span id="totalAmount">0</span>
+                </h3>
+            </div>
+        </div>
+        <div class="info" id="gems"></div>
+    </div>
+</main>
+</body>
+<script defer>
+    getData().then((data)=>{
+        renderData(data);
+        renderTotalAmount(getTotalAmount(data))
+    });
+    const searchForm = document.getElementById("searchForm");
+    const sortForm = document.getElementById("sortForm");
+    searchForm.addEventListener('submit', search);
+    sortForm.addEventListener('submit', sortBy);
+</script>
+</html>
