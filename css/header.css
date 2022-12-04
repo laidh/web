@@ -1,0 +1,94 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px 20px;
+    margin-top: 20px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    align-items: center;
+}
+
+header .links {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+header .links .active {
+    color: #202336;
+}
+
+header .buttons {
+    display: flex;
+    gap: 18px;
+}
+
+header .menu-button {
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 132px;
+    height: 44px;
+    border: 1px solid #FB8F1D;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #FB8F1D;
+    font-size: 15px;
+    transition: all 150ms ease-in-out;
+}
+
+header .menu-button:hover{
+    background-color: #fa7821;
+    color: #ffffff;
+    box-shadow: 0 0 10px 0 #fa4221 inset, 0 0 10px 4px #fa7821;
+}
+
+.logo{
+    transition: all 150ms ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(150%);
+}
+
+@media (min-width: 768px) {
+    header{
+        flex-direction: row;
+    }
+    header nav {
+        flex-direction: row;
+        gap: 34px;
+    }
+    header .links{
+        flex-direction: row;
+        gap: 35px;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+    header{
+        padding: 0 50px 0 50px;
+    }
+}
+
+@media (min-width: 1400px) {
+    header{
+
+    }
+}
+@media (min-width: 1600px) {
+    header{
+        padding: 31px 105px 40px 190px;
+    }
+}

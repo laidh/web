@@ -1,0 +1,111 @@
+content .new-way-to-explore{
+    width: 100%;
+    display: flex;
+    background: #F8F8F8;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px 20px;
+    margin-bottom: 70px;
+}
+
+content .new-way-to-explore img{
+    width: 100%;
+}
+
+content .new-way-to-explore .header-text{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 50px;
+    color: #000000;
+}
+
+content .new-way-to-explore .paragraph-text{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #7D7987;
+    padding-bottom: 33px;
+}
+
+content .new-way-to-explore .learn-btn{
+    border: 1px solid #FB8F1D;
+    background-color: #FFFFFF;
+    color: #FB8F1D;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 52px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 60px;
+    transition: all 150ms ease-in-out;
+}
+
+content .new-way-to-explore .learn-btn:hover{
+    background-color: #fa7821;
+    color: #ffffff;
+    box-shadow: 0 0 10px 0 #fa4221 inset, 0 0 10px 4px #fa7821;
+}
+
+@media (min-width: 576px) {
+    content .new-way-to-explore{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    content .new-way-to-explore img{
+        width: 55%;
+        height: 55%;
+    }
+}
+
+@media (min-width: 768px) {
+    content .new-way-to-explore{
+
+    }
+}
+
+@media (min-width: 992px) {
+    content .new-way-to-explore{
+
+    }
+}
+
+@media (min-width: 1200px) {
+    content .new-way-to-explore{
+        padding: 0 50px 0 50px;
+        gap: 70px;
+    }
+}
+
+@media (min-width: 1400px) {
+    content .new-way-to-explore{
+
+    }
+}
+@media (min-width: 1600px) {
+
+    content .new-way-to-explore div{
+        flex-grow: 1;
+    }
+
+    content .new-way-to-explore{
+        padding: 111px 105px 129px 141px;
+        gap: 102px;
+    }
+    content .new-way-to-explore .header-text{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    content .new-way-to-explore .paragraph-text{
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 30px;
+        padding-bottom: 33px;
+    }
+}
