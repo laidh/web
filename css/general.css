@@ -1,0 +1,35 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #B8BECD;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #202336;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+main {
+    width: 100%;
+}
